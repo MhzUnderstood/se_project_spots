@@ -1,0 +1,123 @@
+.profile{
+    display: flex;
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 34px 0 20px;
+    border-bottom: 1px solid rgba(33, 33, 33, .4) ;
+}
+.profile__header{
+    margin: 0 0 12px;
+    color: #212121;
+    max-width: 420px;
+    text-overflow: ellipsis;font-size: 32px;
+    line-height: 1;
+
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+
+}
+.profile__column{
+    display: flex;
+    flex-direction: column;
+    max-width: 1280px;
+}
+.profile__photo{
+    margin-right: 20px;
+    border-radius: 5%;
+    height: 190px;
+    width: 190px;
+
+}
+.profile__description{
+margin: 0;
+max-width: 420px;
+font-size: 16px;
+line-height: 1;
+color: #212121;
+opacity: .7;
+text-overflow: ellipsis;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+}
+.profile__edit-button{
+  margin-top: auto;
+  height: 16px;
+  background: transparent;
+  border: none;
+  font-family: 'Poppins', Arial, Helvetica, sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1;
+  color: #212121;
+  opacity: .7;
+  text-align: left;
+
+}
+.profile__edit-icon{
+height: 16px;
+width: 19px;
+}
+.profile__new-post-button{
+  display: flex;
+  justify-content: center;
+  align-self: flex-end;
+  width: 149px;
+  height: 52px;
+  margin-left: auto;
+  background-color: #212121;
+  color: #fff;
+  border-radius: 8px;
+  padding: 18px 24px;
+  gap: 8px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1;
+
+}
+.profile__new-post-icon{
+  height: 12px;
+  width: 12px;
+}
+
+  @media screen and (max-width: 630px) {
+    .profile{
+      flex-direction: column;
+      align-items: center;
+      max-width: 288px;
+      text-align: center;
+      padding-top: 20px;
+    }
+
+    .profile__column{
+      margin: 0 0 20px;
+    }
+
+    .profile__photo{
+      width: 80px;
+      height: 80px;
+      margin: 0 0 12;
+    }
+
+    .profile__header{
+      font-size: 20px;
+      margin: 0 0 6px;
+      max-width: 288px;
+    }
+
+    .profile__description{
+      margin: 0 0 32px;
+      max-width: 288px;
+    }
+
+    .profile__edit-button{
+      text-align: center;
+    }
+    .profile__new-post-button{
+      width: 100%;
+    }
+
+  }
